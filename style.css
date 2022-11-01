@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Jost:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Beau Rivage', cursive;
+    font-family: 'Jost', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    min-height: 100vh;
+}
+.image_one{
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.image_two{
+    display: none;
+}
+.text_section{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+}
+.text_section p{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+}
+.text_section h1{
+    margin-top: 20px;
+    line-height: 46px;
+    font-size: 3rem;
+    color: hsl(212, 21%, 14%);
+}
+.text_section article{
+    margin-top: 25px;
+    color: hsl(228, 12%, 48%);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+.text_section s{
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    padding-left: .7rem;
+}
+.current_price{
+    font-size: 2.5rem ;
+    color: hsl(158, 36%, 37%);
+}
+button{
+    padding: 1rem 3rem;
+    width: 100%;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.container{
+    display: flex;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 15px;
+}
+@media(max-width: 794px ){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(30, 38%, 92%);
+        width: 100%;
+        min-height: 100vh;
+    }
+    .image_section img{
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px 20px  0 0;
+    }
+    .image_one{
+        display: none;
+    }
+    .image_two{
+        display: block;
+    }
+    .container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .text_section{
+        max-width: 400px;
+        border-radius:0 0 20px 20px  ;
+    }
+    .text_section h1{
+        margin-top: 20px;
+        line-height: 36px;
+        font-size: 2rem;
+    }
+    .text_section article{
+        margin-top: 10px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    button{
+        width: 100%;
+    }
+}
